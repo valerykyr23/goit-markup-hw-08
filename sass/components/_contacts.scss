@@ -1,0 +1,47 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  @include font(500, 14px, 1.14, 0.02em);
+}
+
+.contact-info__icon--mail,
+.contact-info__icon--tel {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+  transition-property: fill;
+  @extend %transition;
+}
+
+.contact-info .contact-info__item + .contact-info__item {
+  margin-left: 50px;
+}
+
+.contact-info__link {
+  color: var(--primary-text-color);
+  text-decoration-line: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-block;
+  transition-property: color;
+  @extend %transition;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .contact-info__icon--mail,
+  &:focus .contact-info__icon--mail {
+    fill: var(--accent-color);
+  }
+
+  &:hover .contact-info__icon--tel,
+  &:focus .contact-info__icon--tel {
+    fill: var(--accent-color);
+  }
+}

@@ -1,0 +1,40 @@
+.work {
+  background-color: var(--main-background-color);
+  padding-top: 0;
+  text-align: center;
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item {
+  margin-right: 30px;
+  position: relative;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.work__img,
+.teamplayers__img,
+.portfolio-project__image {
+  width: 100%;
+  height: auto;
+}
+
+.work__toptext-container {
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  @extend %flex-center;
+}
+
+.work__toptext {
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  @include font(700, 14px, 1.14, 0.03em);
+}
