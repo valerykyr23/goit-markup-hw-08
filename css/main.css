@@ -432,6 +432,18 @@ textarea {
   position: relative;
 }
 
+.navigation__menu-button .navigation__icon-cross {
+  display: none;
+}
+
+.navigation__menu-button.is-open .navigation__icon-cross {
+  display: block;
+}
+
+.navigation__menu-button.is-open .navigation__icon-menu {
+  display: none;
+}
+
 .page-filter {
   display: flex;
   justify-content: center;
@@ -913,5 +925,14 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.navigation__menu-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
 }
 /*# sourceMappingURL=main.css.map */

@@ -35,3 +35,15 @@
   color: var(--accent-color);
   position: relative;
 }
+
+.navigation__menu-button .navigation__icon-cross {
+  display: none;
+}
+
+.navigation__menu-button.is-open .navigation__icon-cross {
+  display: block;
+}
+
+.navigation__menu-button.is-open .navigation__icon-menu {
+  display: none;
+}
