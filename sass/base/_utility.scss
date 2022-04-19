@@ -21,20 +21,35 @@
 }
 .container {
   // width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  // margin: 0 auto;
+}
 
-  @media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) {
+  .container {
     width: 480px;
+    background-color: purple;
   }
+  
+}
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+@media screen and (min-width: 768px) {
+  .container {
+     width: 768px;
+     background-color: teal;
+    }
+  
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .container {
     width: 1200px;
+    background-color: orange;
+    // width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
 }
 

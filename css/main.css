@@ -85,27 +85,27 @@ img {
   border-radius: 2px;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    background-color: purple;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    background-color: teal;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
 }
 
@@ -328,10 +328,24 @@ textarea {
 
 .logo--black {
   color: var(--title-text-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
   display: inline-block;
-  margin-right: 93px;
+}
+
+@media screen and (min-width: 480px) {
+  .logo--black {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 284px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo--black {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo--white {
