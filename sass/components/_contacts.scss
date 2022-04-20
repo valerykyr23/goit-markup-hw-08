@@ -1,12 +1,16 @@
-.contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
+// .contacts {
+//   display: flex;
+//   margin-left: auto;
+//   align-items: center;
+// }
 
 .contact-info {
-  display: flex;
-  @include font(500, 14px, 1.14, 0.02em);
+  // display: flex;
+  // @include font(500, 14px, 1.14, 0.02em);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
 }
 
 .contact-info__icon--mail,
@@ -17,9 +21,9 @@
   @extend %transition;
 }
 
-.contact-info .contact-info__item + .contact-info__item {
-  margin-left: 50px;
-}
+// .contact-info .contact-info__item + .contact-info__item {
+//   margin-left: 50px;
+// }
 
 .contact-info__link {
   color: var(--primary-text-color);

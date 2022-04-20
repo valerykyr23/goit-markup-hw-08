@@ -355,17 +355,10 @@ textarea {
   color: var(--accent-color);
 }
 
-.contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
 .contact-info {
-  display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.02em;
 }
 
@@ -374,10 +367,6 @@ textarea {
   fill: var(--primary-text-color);
   margin-right: 10px;
   transition-property: fill;
-}
-
-.contact-info .contact-info__item + .contact-info__item {
-  margin-left: 50px;
 }
 
 .contact-info__link {
@@ -406,11 +395,10 @@ textarea {
 .site-nav {
   color: var(--title-text-color);
   text-decoration: none;
-  display: flex;
   transition-property: color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 47px;
   letter-spacing: 0.02em;
 }
 
@@ -421,10 +409,7 @@ textarea {
 .navigation {
   display: flex;
   align-items: center;
-}
-
-.site-nav .site-nav__item + .site-nav__item {
-  margin-left: 50px;
+  position: relative;
 }
 
 .site-nav__link {
@@ -453,6 +438,16 @@ textarea {
 
 .navigation__menu-button.is-open .navigation__icon-menu {
   display: none;
+}
+
+.navigation__menu--mobile {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .page-filter {
