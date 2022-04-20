@@ -43,13 +43,10 @@ img {
 .hero {
   background-color: var(--dark-background);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  max-width: 480px;
+  height: 400px;
+  padding: 118px 60px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile-header-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -60,8 +57,8 @@ img {
   text-transform: uppercase;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
 }
 
@@ -90,12 +87,6 @@ img {
 
 .container {
   width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -538,6 +529,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .features__description {
@@ -551,7 +543,7 @@ body {
 .features__item {
   width: 450px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
 }
 

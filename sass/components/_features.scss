@@ -10,6 +10,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
 }
 
 .features__description {
@@ -25,7 +26,8 @@
   // width: 270px;
   width: 450px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  // flex-wrap: wrap;
   align-content: center;
 
   // &:nth-child(4n) {
