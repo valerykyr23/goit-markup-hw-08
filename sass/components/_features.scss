@@ -1,5 +1,8 @@
 .features__list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .features__title {
@@ -12,18 +15,22 @@
 .features__description {
   color: var(--primary-text-color);
   @include font(null, 14px, 1.7, 0.03em);
+  margin-bottom: 30px;
 }
 
+
+
 .features__item {
-  margin-right: 30px;
-  width: 270px;
+  // margin-right: 30px;
+  // width: 270px;
+  width: 450px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
+  // &:nth-child(4n) {
+  //   margin-right: 0;
+  // }
 }
 
 .features__title--hidden {
@@ -31,10 +38,17 @@
 }
 
 .features__thumb {
-  width: 270px;
+  width: 450px;
+  // width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: var(--tertiary-white-background);
   margin-bottom: 30px;
   @extend %flex-center;
+  
+}
+
+.features {
+  padding-left: 15px;
+  padding-right: 15px;
 }
