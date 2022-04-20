@@ -1,6 +1,11 @@
 .clients__link {
-  width: 170px;
+  // width: 170px;
+  // height: 92px;
+
+  width: 210px;
   height: 92px;
+  
+
   background-color: var(--main-background-color);
   border-radius: 4px;
   border: 1px solid #afb1b8;
@@ -8,6 +13,7 @@
   transition-property: border-color;
   @extend %transition;
   @extend %flex-center;
+
 
   &:hover,
   &:focus {
@@ -22,12 +28,16 @@
 
 .clients__list {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 
-.clients__item + .clients__item {
-  margin-left: 30px;
-}
+// .clients__item + .clients__item {
+//   margin-left: 30px;
+// }
 
 .clients__icon {
   fill: #afb1b8;
@@ -37,4 +47,16 @@
 
 .clients {
   text-align: center;
+}
+
+.clients__item {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.clients__item:nth-child(2n) {
+  margin-right: 0;
+}
+.clients__item:nth-child(n+5) {
+  margin-bottom: 0;
 }
