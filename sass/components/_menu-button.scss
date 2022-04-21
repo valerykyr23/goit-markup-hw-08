@@ -5,5 +5,8 @@
     background-color: transparent;
     border: transparent;
     outline: transparent;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
 }
 
