@@ -38,6 +38,14 @@
   }
 }
 
+.site-nav__item {
+  margin-bottom: 32px;
+}
+
+.site-nav__item:nth-child(3n) {
+  margin-bottom: 0;
+}
+
 .site-nav .site-nav__link.current {
   color: var(--accent-color);
   position: relative;

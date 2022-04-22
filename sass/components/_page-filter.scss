@@ -1,12 +1,23 @@
 .page-filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
-.page-filter .page-filter__item + .page-filter__item {
-  margin-left: 8px;
+
+ .page-filter__item:nth-child() {
+  margin-left: 0;
 }
+.page-filter__item  {
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+
+.page-filter__item:nth-child(-n+3) {
+  margin-bottom: 15px;
+}
+
+
 
 .page-filter__button {
   font-family: inherit;

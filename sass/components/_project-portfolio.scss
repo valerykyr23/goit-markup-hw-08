@@ -1,6 +1,6 @@
 .portfolio-project {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .portfolio-project__description {
@@ -23,7 +23,7 @@
 }
 
 .portfolio-project__item {
-  margin-right: 30px;
+  // margin-right: 30px;
   margin-bottom: 30px;
 
   &:nth-child(3n) {
@@ -66,3 +66,9 @@
     transform: translateY(0);
   }
 }
+
+.portfolio__container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
