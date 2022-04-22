@@ -10,6 +10,9 @@
     transition: transform;
     visibility: hidden;
     pointer-events: none;
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .mobile-menu {
@@ -23,4 +26,25 @@
     transform: translateX(0);
     visibility: visible;
     pointer-events: initial;
+}
+
+.mobile-menu__navigation {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+}
+
+.mobile-menu__socials-link {
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.mobile-menu__socials-table {
+    border: 1px solid rgba(33, 33, 33, 0.2);
 }
