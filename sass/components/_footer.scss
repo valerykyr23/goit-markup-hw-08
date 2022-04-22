@@ -11,6 +11,11 @@
   
 }
 
+.footer__container--socials {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .footer__input--subscribe {
   // margin-right: 12px;
   // width: 100%;
@@ -146,8 +151,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 //   align-items: baseline;
-padding-left: 15px;
-padding-right: 15px;
+padding: 60px 15px;
 }
 
 .footer {
@@ -166,6 +170,13 @@ padding-right: 15px;
 // }
 
 .footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container--logo {
   display: flex;
   flex-direction: column;
   justify-content: center;

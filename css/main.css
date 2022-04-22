@@ -572,6 +572,11 @@ body {
   width: 570px;
 }
 
+.footer__container--socials {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .footer__input--subscribe {
   width: 450px;
   height: 50px;
@@ -693,8 +698,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 60px 15px;
 }
 
 .footer {
@@ -707,6 +711,13 @@ body {
 }
 
 .footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__container--logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
