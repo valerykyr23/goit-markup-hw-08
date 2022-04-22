@@ -5,6 +5,8 @@
 
 .header__container {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 16px 15px;
+  justify-content: space-between;
+  align-items: center;
+
 }

@@ -38,8 +38,9 @@ img {
 
 .header__container {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 16px 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero {
@@ -330,13 +331,6 @@ textarea {
   display: inline-block;
 }
 
-@media screen and (min-width: 480px) {
-  .logo--black {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo--black {
     padding-top: 24px;
@@ -378,9 +372,6 @@ textarea {
 .contact-info__link {
   color: var(--primary-text-color);
   text-decoration-line: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: inline-block;
   transition-property: color;
 }
 
@@ -415,12 +406,6 @@ textarea {
 .navigation {
   display: flex;
   align-items: center;
-}
-
-.site-nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: inline-block;
 }
 
 .site-nav .site-nav__link:hover,
@@ -978,15 +963,12 @@ body {
   position: relative;
   z-index: 99;
   cursor: pointer;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   padding: 12px 8px;
 }
 
 .mobile-overlay {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
@@ -999,6 +981,7 @@ body {
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-right: 40px;
 }
 
 .mobile-menu {
@@ -1030,7 +1013,7 @@ body {
   color: var(--accent-color);
 }
 
-.mobile-menu__socials-table-data + .mobile-menu__socials-table-data {
+.mobile-menu__contacts .mobile-menu__socials-table-data + .mobile-menu__socials-table-data {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

@@ -37,9 +37,9 @@
 .contact-info__link {
   color: var(--primary-text-color);
   text-decoration-line: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: inline-block;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  // display: inline-block;
   transition-property: color;
   @extend %transition;
 

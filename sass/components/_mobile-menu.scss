@@ -1,6 +1,6 @@
 .mobile-overlay {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position:fixed;
     left: 0;
     top: 0;
@@ -13,6 +13,7 @@
     padding-left: 40px;
     padding-top: 48px;
     padding-bottom: 48px;
+    padding-right: 40px;
 }
 
 .mobile-menu {
@@ -43,7 +44,10 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+  
 }
+
+.mobile-menu__contacts
 
 
 
