@@ -102,7 +102,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    background-color: orange;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -363,9 +362,13 @@ textarea {
   display: none;
 }
 
-.contact-info__item--mail {
+.contact-info__item--tel {
   font-size: 24px;
   line-height: 28px;
+}
+
+.contact-info__item--mail {
+  padding-bottom: 32px;
 }
 
 .contact-info__link {
@@ -413,11 +416,11 @@ textarea {
 }
 
 .site-nav__item {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav__item:nth-child(3n) {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .site-nav .site-nav__link.current {
@@ -999,7 +1002,6 @@ body {
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-right: 40px;
 }
 
 .mobile-menu {
@@ -1019,6 +1021,7 @@ body {
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
+  padding-bottom: 302px;
 }
 
 .mobile-menu__socials-link {
@@ -1033,5 +1036,9 @@ body {
 
 .mobile-menu__socials-table-data + .mobile-menu__socials-table-data {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
 }
 /*# sourceMappingURL=main.css.map */

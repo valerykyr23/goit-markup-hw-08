@@ -23,11 +23,15 @@
   display: none;
 }
 
-.contact-info__item--mail {
+.contact-info__item--tel {
   font-size: 24px;
   line-height: 28px;
+  
 }
 
+.contact-info__item--mail {
+  padding-bottom: 32px;
+}
 
 
 // .contact-info .contact-info__item + .contact-info__item {

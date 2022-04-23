@@ -20,33 +20,27 @@
   border-radius: 2px;
 }
 .container {
-  // width: 1200px;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // margin: 0 auto;
   width: 100%;
-}
-
-
-
-@media screen and (min-width: 768px) {
-  .container {
-     width: 768px;
-     background-color: teal;
-    }
   
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 768px) {
+  
+    width: 768px;
+    background-color: teal;
+  
+  
+  }
+  
+  @media screen and (min-width: 1200px) {
+  
     width: 1200px;
-    background-color: orange;
-    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+  
   }
+
 }
+
 
 
 .section {
