@@ -406,7 +406,13 @@ textarea {
   fill: var(--primary-text-color);
   margin-right: 10px;
   transition-property: fill;
-  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-info__icon--mail,
+  .contact-info__icon--tel {
+    display: none;
+  }
 }
 
 .contact-info__item--tel {
@@ -1049,6 +1055,18 @@ body {
 
 @media screen and (min-width: 1200px) {
   .navigation__menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-for-mobile {
     display: none;
   }
 }
