@@ -9,5 +9,13 @@
     z-index: 99;
     cursor: pointer;
     padding: 12px 8px;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
 
