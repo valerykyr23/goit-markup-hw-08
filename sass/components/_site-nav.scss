@@ -1,15 +1,18 @@
 .site-nav {
   color: var(--title-text-color);
   text-decoration: none;
-  // display: flex;
   transition-property: color;
   @extend %transition;
-  // @include font(500, 14px, 1.14, 0.02em);
-  
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
+  @include font(500, 40px, 1.17, 0.02em);
+
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: flex;
+    @include font(500, 14px, 1.14, 0.02em);
+
+  }
 }
 
 .site-nav__link {
@@ -38,13 +41,6 @@
   }
 }
 
-.site-nav__item {
-  padding-bottom: 32px;
-}
-
-.site-nav__item:nth-child(3n) {
-  padding-bottom: 0;
-}
 
 .site-nav .site-nav__link.current {
   color: var(--accent-color);

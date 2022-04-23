@@ -92,11 +92,11 @@ justify-content: center;
 .teamplayers__name {
   color: var(--title-text-color);
   margin-bottom: 10px;
-  @include font(500, 16px, 1.19, 0.03em);
+  @include font(500, 16px, 1.18, 0.03em);
 }
 
 .teamplayers__position {
   color: var(--primary-text-color);
   margin-bottom: 16px;
-  @include font(null, 16px, 1.19, 0.03em);
+  @include font(null, 16px, 1.18, 0.03em);
 }

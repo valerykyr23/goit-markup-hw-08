@@ -21,13 +21,12 @@
 }
 .container {
   width: 100%;
+
   
   @media screen and (min-width: 768px) {
   
     width: 768px;
     background-color: teal;
-  
-  
   }
   
   @media screen and (min-width: 1200px) {
@@ -50,10 +49,16 @@
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px){
+    font-size: 36px;
+    line-height: 1.16;
+
+  }
 }
 
 .button {
