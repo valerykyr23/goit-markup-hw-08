@@ -11,10 +11,7 @@
   
 }
 
-.footer__container--socials {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
+
 
 .footer__input--subscribe {
   // margin-right: 12px;
@@ -135,6 +132,7 @@
   // align-items: flex-start;
   // flex-direction: column;
   // margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .footer__title--join {
@@ -151,7 +149,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 //   align-items: baseline;
-padding: 60px 15px;
 }
 
 .footer {
@@ -181,4 +178,8 @@ padding: 60px 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer__container--address {
+  margin-bottom: 60px;
 }
