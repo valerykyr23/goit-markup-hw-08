@@ -8,6 +8,11 @@
   flex-direction: column;
   gap: 32px;
 
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+   flex-direction: row;
+   @include font(500, 14px, 1.14, 00.02em)
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -27,6 +32,10 @@
   align-items: center;
   // position: relative;
   display: none;
+
+  @media screen and (min-width: 481px) {
+    display: block;
+  }
   
 }
 

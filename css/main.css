@@ -36,19 +36,16 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 480px) {
-  .header__container {
-    display: flex;
-    padding: 16px 15px;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header__container {
+  display: flex;
+  padding: 16px 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .header__container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 32px 15px;
   }
 }
 
@@ -72,7 +69,7 @@ img {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .hero {
     max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet-hero-img.jpg);
@@ -421,11 +418,27 @@ textarea {
   display: none;
 }
 
+@media screen and (min-width: 481px) {
+  .contacts {
+    display: block;
+  }
+}
+
 .contact-info {
   font-weight: 500;
   font-size: 34px;
-  line-height: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact-info {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    display: flex;
+  }
 }
 
 .contact-info__icon--mail,
@@ -433,12 +446,13 @@ textarea {
   fill: var(--primary-text-color);
   margin-right: 10px;
   transition-property: fill;
+  display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .contact-info__icon--mail,
   .contact-info__icon--tel {
-    display: none;
+    display: block;
   }
 }
 
@@ -490,6 +504,16 @@ textarea {
   gap: 32px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .site-nav {
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .site-nav {
     display: flex;
@@ -508,6 +532,12 @@ textarea {
   display: flex;
   align-items: center;
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .navigation {
+    display: block;
+  }
 }
 
 .site-nav .site-nav__link:hover,
@@ -649,6 +679,15 @@ body {
   justify-content: center;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: baseline;
+  }
+}
+
 .features__title {
   color: var(--title-text-color);
   text-transform: uppercase;
@@ -675,6 +714,12 @@ body {
   align-content: center;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+
 .features__title--hidden {
   display: none;
 }
@@ -685,11 +730,6 @@ body {
   border-radius: 4px;
   background-color: var(--tertiary-white-background);
   margin-bottom: 30px;
-}
-
-.features {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .footer__button {
@@ -954,6 +994,19 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .teamplayers__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .teamplayers__item {
+    width: 354px;
+  }
+  .teamplayers__item:nth-child(2n) {
+    margin-right: 30px;
+  }
+}
+
 .teamplayers {
   background-color: var(--tertiary-white-background);
   text-align: center;
@@ -1115,25 +1168,7 @@ body {
   padding: 12px 8px;
 }
 
-@media screen and (min-width: 768px) {
-  .navigation__menu-button {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .navigation__menu-button {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-for-mobile {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 481px) {
   .menu-for-mobile {
     display: none;
   }

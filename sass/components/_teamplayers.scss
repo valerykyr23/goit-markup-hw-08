@@ -8,16 +8,35 @@
   // min-width: 270px;
   margin-bottom: 30px;
 
-  &:nth-child(4n) {
-    margin-bottom: 30px;
-  }
- 
-
-
   // &:nth-child(4n) {
   //   margin-right: 0;
   // }
+
+  &:nth-child(4n) {
+    margin-bottom: 30px;
+  }
+
+  }
+
+  
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+
+.teamplayers__list {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+    .teamplayers__item {
+      width: 354px;
+    }
+
+    .teamplayers__item:nth-child(2n) {
+      margin-right: 30px;
+    }
+
+}
+
 
 
 
