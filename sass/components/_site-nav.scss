@@ -4,6 +4,9 @@
   transition-property: color;
   @extend %transition;
   @include font(500, 40px, 1.17, 0.02em);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
 }
 
@@ -23,6 +26,7 @@
   display: flex;
   align-items: center;
   // position: relative;
+  display: none;
   
 }
 
@@ -78,7 +82,7 @@
     text-decoration: none;
     display: flex;
     transition-property: color;
-    @extend %transition;
+    // @extend %transition;
     @include font(500, 14px, 1.14, 0.02em);
   }
   

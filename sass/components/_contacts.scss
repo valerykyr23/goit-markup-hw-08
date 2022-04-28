@@ -4,6 +4,11 @@
 //   align-items: center;
 // }
 
+
+.contacts {
+  display:none;
+}
+
 .contact-info {
   // display: flex;
   // @include font(500, 14px, 1.14, 0.02em);
@@ -32,6 +37,7 @@
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
   
 }
 
