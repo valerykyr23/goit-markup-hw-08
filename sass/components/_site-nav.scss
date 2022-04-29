@@ -55,6 +55,16 @@
 }
 
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .site-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: inline-block;
+
+  }
+}
+
+
 .site-nav .site-nav__link.current {
   color: var(--accent-color);
   position: relative;

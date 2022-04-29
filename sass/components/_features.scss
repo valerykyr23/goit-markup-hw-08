@@ -45,9 +45,20 @@
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     width: 354px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
     
   }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .features__item:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+}
+
 
 .features__title--hidden {
   display: none;
@@ -61,6 +72,10 @@
   background-color: var(--tertiary-white-background);
   margin-bottom: 30px;
   @extend %flex-center;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    width: 354px;
+  }
   
 }
 
