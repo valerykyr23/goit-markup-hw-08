@@ -1,6 +1,12 @@
 .portfolio-project {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .portfolio-project__description {
@@ -31,6 +37,11 @@
   }
 
   &:nth-child(n+7) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    width: 354px;
     margin-bottom: 0;
   }
 }

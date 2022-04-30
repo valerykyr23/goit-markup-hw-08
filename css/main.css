@@ -1175,6 +1175,14 @@ body {
   flex-direction: column;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio-project {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .portfolio-project__description {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -1202,6 +1210,13 @@ body {
 
 .portfolio-project__item:nth-child(n+7) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio-project__item {
+    width: 354px;
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-project__title {
