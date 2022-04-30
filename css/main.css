@@ -913,6 +913,14 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 418px) and (max-width: 768px) {
+  .footer__container--contacts {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .footer {
   background-color: var(--dark-background);
 }

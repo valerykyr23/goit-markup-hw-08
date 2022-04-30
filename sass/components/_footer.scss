@@ -149,6 +149,13 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 //   align-items: baseline;
+
+@media screen and (min-width: 418px) and (max-width: 768px) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 }
 
 .footer {
