@@ -941,7 +941,7 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 418px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .footer__container--contacts {
     flex-direction: row;
     flex-wrap: wrap;
