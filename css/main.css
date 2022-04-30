@@ -45,7 +45,8 @@ img {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .header__container {
-    padding: 26px 15px 0 15px;
+    width: 738px;
+    padding: 0 15px;
   }
 }
 
@@ -402,6 +403,12 @@ textarea {
   display: inline-block;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo--black {
+    padding: 26px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo--black {
     padding-top: 24px;
@@ -513,6 +520,12 @@ textarea {
 .contact-info__link:hover .contact-info__icon--tel,
 .contact-info__link:focus .contact-info__icon--tel {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .contact-info__link {
+    padding: 21px 0;
+  }
 }
 
 .site-nav {
@@ -642,6 +655,15 @@ textarea {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .page-filter {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 8px;
+  }
+}
+
 .page-filter__item + .page-filter__item {
   margin-left: 8px;
   margin-bottom: 15px;
@@ -653,6 +675,12 @@ textarea {
 
 .page-filter__item:nth-child(n+4) {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .page-filter__item + .page-filter__item {
+    margin: 0;
+  }
 }
 
 .page-filter__button {
