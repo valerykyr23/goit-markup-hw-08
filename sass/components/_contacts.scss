@@ -1,18 +1,17 @@
-// .contacts {
-//   display: flex;
-//   margin-left: auto;
-//   align-items: center;
-// }
-
 
 .contacts {
   display:none;
 
   @media screen and (min-width: 481px) {
-    display: block;
-
-    
+    display: block; 
   }
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  
 }
 
 
@@ -20,19 +19,19 @@
   .contact-info  {
     display: flex;
     flex-direction: column;
+    @include font(500, 34px, 1.17, 0.02em)
     
+  }
+}
 
+@media screen and (min-width: 769px) {
+.contact-info {
+  display: flex;
+  @include font(500, 14px, 1.14, 0.02em);
   }
 }
 
 
-
-.contact-info {
-  // display: flex;
-  // @include font(500, 14px, 1.14, 0.02em);
-  @include font(500, 34px, 1.17, 0.02em)
-
-}
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .contact-info {
@@ -45,7 +44,6 @@
 .contact-info__icon--mail,
 .contact-info__icon--tel {
   fill: var(--primary-text-color);
-  // margin-right: 10px;
   transition-property: fill;
   @extend %transition;
   display: none;
@@ -58,7 +56,17 @@
     margin-right: 8px;
 
   }
+
+  @media screen and (min-width: 769px) {
+   margin-right: 10px;
+  }
   
+  }
+
+  @media screen and (min-width: 769px) {
+    .contact-info .contact-info__item+.contact-info__item {
+      margin-left: 50px;
+    }
   }
 
   
@@ -88,16 +96,9 @@
 }
 
 
-// .contact-info .contact-info__item + .contact-info__item {
-//   margin-left: 50px;
-// }
-
 .contact-info__link {
   color: var(--primary-text-color);
   text-decoration-line: none;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  // display: inline-block;
   transition-property: color;
   @extend %transition;
 
@@ -114,10 +115,29 @@
   &:hover .contact-info__icon--tel,
   &:focus .contact-info__icon--tel {
     fill: var(--accent-color);
+
+@media screen and (min-width: 769px) {
+  
+padding-top: 32px;
+padding-bottom: 32px;
+display: inline-block;
+}
+    
   }
 
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     padding: 21px 0;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .contact-info__icon--mail,
+  .contact-info__icon--tel {
+    fill: var(--primary-text-color);
+    margin-right: 10px;
+    transition-property: fill;
+    @extend %transition;
   }
 }
