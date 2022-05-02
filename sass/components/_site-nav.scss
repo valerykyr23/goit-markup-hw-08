@@ -8,20 +8,30 @@
   flex-direction: column;
   gap: 32px;
 
+  .site-nav &:hover,
+  .site-nav &:focus {
+    color: var(--accent-color);
+  }
+
   @media screen and (min-width: 481px) and (max-width: 768px) {
    flex-direction: row;
    @include font(500, 14px, 1.14, 00.02em)
   }
 
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
     display: flex;
     @include font(500, 14px, 1.14, 0.02em);
-
   }
+
 }
+
+@media screen and (min-width: 769px) {
+    .site-nav .site-nav__item+.site-nav__item {
+      margin-left: 50px;
+    }
+  }
+
 
 .site-nav__link {
   color: var(--title-text-color);
@@ -30,38 +40,13 @@
 .navigation {
   display: flex;
   align-items: center;
-  // position: relative;
+  position: relative;
   display: none;
 
   @media screen and (min-width: 481px) {
     display: block;
   }
   
-}
-
-// .site-nav .site-nav__item + .site-nav__item {
-//   margin-left: 50px;
-// }
-
-.site-nav__link {
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  // display: inline-block;
-
-  .site-nav &:hover,
-  .site-nav &:focus {
-    color: var(--accent-color);
-  }
-}
-
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .site-nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: inline-block;
-
-  }
 }
 
 
@@ -95,15 +80,7 @@
 
 
 
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    color: var(--title-text-color);
-    text-decoration: none;
-    display: flex;
-    transition-property: color;
-    // @extend %transition;
-    @include font(500, 14px, 1.14, 0.02em);
-  }
+
   
   .site-nav__link {
     color: var(--title-text-color);
@@ -114,9 +91,7 @@
     align-items: center;
   }
   
-  .site-nav .site-nav__item+.site-nav__item {
-    margin-left: 50px;
-  }
+  
   
   .site-nav__link {
     padding-top: 32px;
@@ -133,4 +108,3 @@
     color: var(--accent-color);
     position: relative;
   }
-}

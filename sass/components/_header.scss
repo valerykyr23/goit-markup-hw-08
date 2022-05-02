@@ -3,9 +3,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-
-  
-
   .header__container {
     display: flex;
     padding: 16px 15px;
@@ -19,14 +16,12 @@
         padding: 0 15px;
       
     }
-    
-  }
 
-  @media screen and (min-width: 1200px) {
-    .header__container{
-      display: flex;
+    @media screen and (min-width: 769px) {
+
+      .header__container {
+        max-width: 1170px;
+      }
+     
     }
-   
   }
-
-

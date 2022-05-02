@@ -20,26 +20,25 @@
 
 .logo--black {
   color: var(--title-text-color);
-  // padding-top: 24px;
-  // padding-bottom: 25px;
   display: inline-block;
-  // margin-right: 93px;
+ 
 
   @media screen and (min-width: 481px) and (max-width: 768px) {
     padding: 26px;
   }
-}
 
-
-
-@media screen and (min-width: 1200px) {
-  .logo--black {
+  @media screen and (min-width: 769px) {
+  
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-    
+  
   }
 }
+
+
+
+
 
 .logo--white {
   color: var(--main-background-color);
