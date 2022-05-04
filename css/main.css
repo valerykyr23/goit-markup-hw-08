@@ -830,6 +830,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 570px;
+    grid-column: auto;
   }
 }
 
@@ -891,7 +892,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer__title--subscribe {
     text-align: left;
   }
@@ -968,6 +969,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title--join {
+    text-align: left;
+  }
 }
 
 .footer__container--contacts {
