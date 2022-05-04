@@ -5,24 +5,15 @@
 
   .header__container {
     display: flex;
-    padding: 16px 15px;
+    padding: 0 15px;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
   }
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .header__container {
-        width: 738px;
-        padding: 0 15px;
-      
-    }
-
-    @media screen and (min-width: 769px) {
-
+  @media screen and (min-width: 768px) {
+    
       .header__container {
-        width: 1200px;
-       padding: 0;
+        height: 80px;
       }
-     
-    }
   }

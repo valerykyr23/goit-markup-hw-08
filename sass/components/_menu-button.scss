@@ -9,6 +9,7 @@
     z-index: 99;
     cursor: pointer;
     padding: 12px 8px;
+    
     }
     
 
@@ -16,7 +17,8 @@
 
 .menu-for-mobile {
 
-@media screen and (min-width: 481px) {
-    display: none;}
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
     
 }

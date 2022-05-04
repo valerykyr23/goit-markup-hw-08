@@ -2,37 +2,38 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  row-gap: 15px;
+  column-gap: 8px;
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 30px;
-    gap: 8px;
   }
 }
 
 
- .page-filter__item + .page-filter__item {
-   margin-left: 8px;
-   margin-bottom: 15px;
- }
+//  .page-filter__item + .page-filter__item {
+//    margin-left: 8px;
+//    margin-bottom: 15px;
+//  }
 
- .page-filter__item:nth-child(4) {
-   margin-left: 0;
- }
+//  .page-filter__item:nth-child(4) {
+//    margin-left: 0;
+//  }
 
- .page-filter__item:nth-child(n+4) {
-   margin-bottom: 0;
- }
+//  .page-filter__item:nth-child(n+4) {
+//    margin-bottom: 0;
+//  }
 
- @media screen and (min-width: 481px) and (max-width: 768px) {
-   .page-filter__item  + .page-filter__item {
-     margin:0;
+//  @media screen and (min-width: 481px) and (max-width: 768px) {
+//    .page-filter__item  + .page-filter__item {
+//      margin:0;
      
-   }
+//    }
 
    
- }
+//  }
 
 
 .page-filter__button {
