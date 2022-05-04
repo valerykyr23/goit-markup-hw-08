@@ -241,16 +241,15 @@ body {
   padding: 40px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .modal {
-    width: 450px !important;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    min-height: 581px;
+    max-width: 528px;
   }
 }
 
@@ -316,7 +315,7 @@ textarea {
 .modal__agreement {
   color: var(--primary-text-color);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
@@ -326,10 +325,18 @@ textarea {
   height: 15px;
   border: 2px solid black;
   border-radius: 2px;
+  margin-right: 7px;
+  display: inline-flex;
+  align-items: flex-end;
+  position: relative;
 }
 
 .modal__check-icon {
   fill: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__checkbox:checked + .modal__agreement svg {
@@ -402,10 +409,6 @@ textarea {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-}
-
-.modal__check {
-  margin-right: 7px;
 }
 
 .logo {
@@ -1277,7 +1280,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-button, .modal__check, .features__thumb, .footer__button, .footer__link--socials, .clients__link, .work__toptext-container, .teamplayers__link--socials {
+.modal__close-button, .features__thumb, .footer__button, .footer__link--socials, .clients__link, .work__toptext-container, .teamplayers__link--socials {
   justify-content: center;
   align-items: center;
   display: flex;
