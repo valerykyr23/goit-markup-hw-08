@@ -1277,7 +1277,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close-button, .modal__agreement, .modal__check, .features__thumb, .footer__button, .footer__link--socials, .clients__link, .work__toptext-container, .teamplayers__link--socials {
+.modal__close-button, .modal__check, .features__thumb, .footer__button, .footer__link--socials, .clients__link, .work__toptext-container, .teamplayers__link--socials {
   justify-content: center;
   align-items: center;
   display: flex;
