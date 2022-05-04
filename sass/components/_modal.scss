@@ -11,7 +11,7 @@
   margin: -1px;
 }
 .modal {
-  // min-height: 609px;
+  
   width: calc(100% - 30px);
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -30,7 +30,7 @@
 
   @media screen and (min-width:1200px) {
     max-width: 528px;
-    // min-height: 581px;
+    
   }
 }
 
@@ -88,7 +88,7 @@ textarea {
 
 .modal__agreement {
   color: var(--primary-text-color);
-  @include font(400, 12px, 1.7, 0.03em); // Is this correct here? I changed 14 to 12
+  @include font(400, 12px, 1.7, 0.03em); 
 }
 
 .modal__agreement .modal__check {
@@ -102,9 +102,7 @@ textarea {
   position: relative;
 }
 
-// .modal__agreement {
-//   @extend %flex-center;
-// }
+
 
 .modal__check-icon {
   fill: transparent;
@@ -135,7 +133,6 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  // margin-top: 30px;
   @include font(700, 16px, 1.8, 0.06em);
   justify-self: center;
 }
@@ -181,14 +178,10 @@ textarea {
 }
 
 .modal__bottom-form {
-  // flex-wrap: wrap;
-  // @extend %flex-center;
+  
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
 
-// .modal__check {
-  
-//   //@extend %flex-center;
-// }
+
