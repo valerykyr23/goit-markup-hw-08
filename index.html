@@ -236,23 +236,39 @@
 
           <ul class="work__list list">
             <li class="work__item">
-              <img
+              <!-- <img
                 class="work__img"
                 src="./images/coding.jpeg.jpg"
                 width="370"
                 alt="Программист набирает код на клавиатуре"
-              />
+              /> -->
+
+              <picture>
+              
+                <img  class="work__img" alt="Программист набирает код на клавиатуре" width="370"
+                  src="./images/first-work-img_lg.png"
+                  srcset="./images/first-work-img_lg.png, ./images/first-work-img_lg.png 2x">
+              
+              </picture>
+
               <div class="work__toptext-container">
                 <p class="work__toptext">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img
+              <!-- <img
                 class="work__img"
                 src="./images/template.jpeg.jpg"
                 width="370"
                 alt="Дизайнер держит в руке телефон и выбирает на ноутбуке шаблон размещения контента на экране телефона"
-              />
+              /> -->
+
+              <picture>
+              
+                <img class="work__img" alt="Дизайнер держит в руке телефон и выбирает на ноутбуке шаблон размещения контента на экране телефона" width="370" src="./images/second-work-img_lg.png"
+                  srcset="./images/second-work-img_lg.png, ./images/second-work-img_lg.png 2x">
+              
+              </picture>
 
               <div class="work__toptext-container">
                 <p class="work__toptext">Мобильные приложения</p>
@@ -260,12 +276,21 @@
             </li>
 
             <li class="work__item">
-              <img
+              <!-- <img
                 class="work__img"
                 src="./images/selectingcolor.jpeg.jpg"
                 width="370"
                 alt="Программист держит в руках планшет с изображением цветовой карты пикселей"
-              />
+              /> -->
+
+               <picture>
+              
+                <img class="work__img" alt="Программист держит в руках планшет с изображением цветовой карты пикселей"  width="370"
+                 src="./images/third-work-img_lg.png"
+                  srcset="./images/third-work-img_lg.png, ./images/third-work-img_lg.png 2x">
+              
+              </picture>
+
               <div class="work__toptext-container">
                 <p class="work__toptext">Дизайнерские решения</p>
               </div>
@@ -281,13 +306,17 @@
           <h2 class="section-title">Наша команда</h2>
 
           <ul class="teamplayers__list list">
+
             <li class="teamplayers__item">
-              <img
-                class="teamplayers__img"
-                src="./images/productdesign.jpeg.jpg"
-                alt="Парень в бордовой рубашке,в очках,с бородой."
-                width="270"
-              />
+
+              <picture>
+
+                <source media="(min-width: 768px) and (max-width: 1200px)" srcset="./images/first-teamplayer-img_md.png, ./images/first-teamplayer-img_md@2x.png 2x">
+                <source media="(min-width: 1200px)" srcset="./images/first-teamplayer-img_lg.png, ./images/first-teamplayer-img_lg@2x.png 2x">
+                <img class="teamplayers__img" alt="Парень в бордовой рубашке,в очках,с бородой." width="270" src="./images/first-teamplayer-img_sm.png" srcset="./images/first-teamplayer-img_sm.png, ./images/first-teamplayer-img_sm@2x.png 2x">
+
+              </picture>
+             
 
               <div class="teamplayers__profile">
                 <h3 class="teamplayers__name">Игорь Демьяненко</h3>
@@ -348,12 +377,24 @@
             </li>
 
             <li class="teamplayers__item">
-              <img
+              <!-- <img
                 class="teamplayers__img"
                 src="./images/frontend.jpeg.jpg"
                 alt="Девушка-блондинка, в очках,в черном пиджаке."
                 width="270"
-              />
+              /> -->
+
+              <picture>
+              
+                <source media="(min-width: 768px) and (max-width: 1200px)"
+                  srcset="./images/second-teamplayer-img_md.png, ./images/second-teamplayer-img_md@2x.png 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="./images/second-teamplyer-img_lg.png, ./images/second-teamplyer-img_lg.png 2x">
+                <img class="teamplayers__img" alt="Девушка-блондинка, в очках,в черном пиджаке." width="270"
+                  src="./images/second-teamplayer-img_sm.png"
+                  srcset="./images/second-teamplayer-img_sm.png, ./images/second-teamplayer-img_sm@2x.png 2x">
+              
+              </picture>
 
               <div class="teamplayers__profile">
                 <h3 class="teamplayers__name">Ольга Репина</h3>
@@ -414,12 +455,26 @@
             </li>
 
             <li class="teamplayers__item">
-              <img
+              <!-- <img
                 class="teamplayers__img"
                 src="./images/marketing.jpeg.jpg"
                 alt="Парень в светло-голубой рубашке."
                 width="270"
-              />
+              /> -->
+
+                <picture>
+                
+                  <source media="(min-width: 768px) and (max-width: 1200px)"
+                    srcset="./images/third-teamplayer-img_md.png, ./images/third-teamplayer-img_md@2x.png 2x">
+                  <source media="(min-width: 1200px)"
+                    srcset="./images/third-teamplayer-img_lg.png, ./images/third-teamplayer-img_lg@2x.png 2x">
+                  <img class="teamplayers__img" alt="Парень в светло-голубой рубашке." width="270"
+                    src="./images/third-teamplayer-img_sm.png"
+                    srcset="./images/third-teamplayer-img_sm.png, ./images/third-teamplayer-img_sm@2x.png 2x">
+                
+                </picture>
+
+
 
               <div class="teamplayers__profile">
                 <h3 class="teamplayers__name">Николай Тарасов</h3>
@@ -479,12 +534,24 @@
             </li>
 
             <li class="teamplayers__item">
-              <img
+              <!-- <img
                 class="teamplayers__img"
                 src="./images/ui.jpeg.jpg"
                 alt="Парень с бородой,в очках,в черной футболке."
                 width="270"
-              />
+              /> -->
+
+              <picture>
+              
+                <source media="(min-width: 768px) and (max-width: 1200px)"
+                  srcset="./images/fourth-teamplayer-img_md.png, ./images/fourth-teamplayer-img_md@2x.png 2x">
+                <source media="(min-width: 1200px)"
+                  srcset="./images/fourth-teamplayer-img_lg.png, ./images/fourth-teamplayer-img_lg@2x.png 2x">
+                <img class="teamplayers__img" alt="Парень с бородой,в очках,в черной футболке." width="270"
+                  src="./images/fourth-teamplayer-img_sm.png"
+                  srcset="./images/fourth-teamplayer-img_sm.png, ./images/fourth-teamplayer-img_sm@2x.png 2x">
+              
+              </picture>
 
               <div class="teamplayers__profile">
                 <h3 class="teamplayers__name">Михаил Ермаков</h3>
