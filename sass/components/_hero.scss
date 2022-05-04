@@ -13,7 +13,7 @@
   background-image: linear-gradient(to right,
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-  url(../../images/bg-img_sm.png);
+  url(../images/bg-img_sm.png);
 
   @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
@@ -22,7 +22,7 @@
     background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-     url(../../images/bg-img_md@2x.png);
+     url(../images/bg-img_md@2x.png);
     
   }
 }
@@ -41,7 +41,7 @@
     background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../../images/bg-img_md.png);
+    url(../images/bg-img_md.png);
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -50,7 +50,7 @@
       background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url(../../images/bg-img_md@2x.png);
+        url(../images/bg-img_md@2x.png);
     
     }
 }
@@ -65,7 +65,7 @@
     background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../../images/bg-img_lg.png);
+    url(../images/bg-img_lg.png);
 
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -74,7 +74,7 @@
       background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url(../../images/bg-img_lg@2x.png);
+        url(../images/bg-img_lg@2x.png);
     
     }
 
