@@ -36,18 +36,20 @@ body {
 
   @media screen and (max-width: 768px) {
 
-    max-width: 768px;
+    width: 480px;
+    margin: 0 auto;
   }
 
   
   @media screen and (min-width: 768px) and (max-width: 1200px) {
-  
-    max-width: 1200px;
+
+    width: 768px;
+    margin: 0 auto;
   }
   
   @media screen and (min-width: 1200px) {
   
-    max-width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -59,9 +61,9 @@ body {
 .section {
   padding: 60px 15px;
 
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding: 94px 0;
+  // }
   
 }
 
