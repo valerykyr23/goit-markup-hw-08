@@ -33,6 +33,8 @@ body {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 
   @media screen and (max-width: 768px) {
 
@@ -50,8 +52,6 @@ body {
   @media screen and (min-width: 1200px) {
   
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
   }
   
@@ -59,11 +59,13 @@ body {
 
 
 .section {
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  // @media screen and (min-width: 1200px) {
-  //   padding: 94px 0;
-  // }
+   @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+   }
   
 }
 

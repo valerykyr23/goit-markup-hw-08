@@ -151,6 +151,8 @@ body {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -170,14 +172,20 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin: 0 auto;
   }
 }
 
 .section {
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -1025,6 +1033,8 @@ body {
 
 .footer {
   background-color: var(--dark-background);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-link-footer {
